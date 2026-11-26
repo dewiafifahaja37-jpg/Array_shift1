@@ -1,29 +1,38 @@
-// Tugas Array - Nama Shift 1
-let Nama_Shif1 = [
-  "Diandra Kayla",
-  "Dewi Afifatu Zuhro",
-  "Della Agustina Widiyani",
-  "Dini Febtia Murni",
-  "Bunia Asyirotul Karimah",
-  "Bunga Sasi Kirana",
-  "Ashley Aurellia Nomi Putri",
-  "Anisa Istikoma",
-  "Alyani Rofiyah",
-  "M Zainul Haqi",
-  "Lucky Adi Irawan",
-  "Ihzan Gunawan",
+
+let Nama_Shift1 = [
+    "Ashley Aurellia Nomi Putri",
+    "Anisa Istikoma",
+    "Alyani Rofiyah",
+    "Bunga Sasi Kirana",
+    "Bunia Asyirotul Karimah",
+    "Della Agustina Widiyani",
+    "Diandra Kayla Aramita",
+    "Dewi Afifatu Zuhro",
+    "M. Zainul Haqi",
+    "Ikhzan Gunawan",
+    "Adi Irawan yang Beruntung",
 ];
 
-// Menampilkan semua nama satu per satu
-console.log("=== DAFTAR NAMA SHIFT 1 ===");
-for (let i = 0; i < Nama_Shif1.length; i++) {
-  console.log((i + 1) + ". " + Nama_Shif1[i]);
+// 1. Tampilkan index sesuai nama masing-masing
+// 2. Array dimulai dari index 0
+console.log("--- DAFTAR NAMA + INDEX ---");
+for (let i = 0; i < Nama_Shift1.length; i++) {
+    console.log(i + ". " + Nama_Shift1[i]);
 }
 
 // Menampilkan jumlah total
-console.log("---------------------------");
-console.log("Jumlah Shift 1: " + Nama_Shif1.length + " orang");
+console.log("------------------------");
+console.log("Jumlah Shift 1: " + Nama_Shift1.length + " orang");
 
 // Menampilkan nama pertama dan terakhir
-console.log("Nama Pertama: " + Nama_Shif1[0]);
-console.log("Nama Terakhir: " + Nama_Shif1[Nama_Shif1.length - 1]);
+console.log("Nama Pertama: " + Nama_Shift1[0]);
+console.log("Nama Terakhir: " + Nama_Shift1[Nama_Shift1.length - 1]);
+
+// 3. Tampilkan data, jika index ke-3 lewati / jangan tampilkan
+console.log("--- SKIP INDEX 3 ---");
+for (let i = 0; i < Nama_Shift1.length; i++) {
+    if (i === 3) {
+        continue;
+    }
+    console.log(i + ". " + Nama_Shift1[i]);
+}
